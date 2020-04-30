@@ -1,6 +1,6 @@
 ## Summary of optimized, gzipped, bundle sizes for equivalent apps.
 
-Language | Optimized (KB) | Gzipped (KB)
+Language / Framework | Optimized (KB) | Gzipped (KB)
 --- | ---:| ---:
 elm | 28 | 10
 purescript react-basic-hooks | 348 | 81
