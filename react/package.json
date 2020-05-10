@@ -5,8 +5,14 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "parcel": "^1.12.4",
+    "parcel": "^2.0.0-nightly.259",
     "purescript": "^0.13.6",
-    "spago": "^0.14.0"
+    "spago": "^0.15.2"
+  },
+  "scripts": {
+    "start": "npm run build && parcel src/index.html",
+    "build-production": "npm run build && parcel build src/index.html",
+    "build": "spago build --purs-args '--codegen js,corefn' && zephyr Main.main --dce-foreign",
+    "clean": "rm -rf .cache .spago .psci_modules node_modules output dce-output dist"
   }
 }

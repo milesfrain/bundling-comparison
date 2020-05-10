@@ -1,1 +1,1 @@
-require("../output/Main/index.js").main();
+require("../dce-output/Main/index.js").main();
